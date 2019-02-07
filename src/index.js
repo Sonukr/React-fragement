@@ -5,6 +5,7 @@ import "./styles.css";
 
 export class Hello extends React.Component {
   getMarkup() {
+    // dom parser to work with string data and create a html dom
     const markup = "<p>text here</p>";
     const parser = new DOMParser();
     const el = parser.parseFromString(markup, "text/xml");
